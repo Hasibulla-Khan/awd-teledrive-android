@@ -1,7 +1,7 @@
-# Awd TeleDrive Android 📱🚀
+# TeleNest 📱🚀
 
 <p align="center">
-  <img src="logo-drive.png" width="130" height="130" alt="Awd TeleDrive Android Logo">
+  <img src="logo-drive.png" width="130" height="130" alt="TeleNest Logo">
 </p>
 
 <p align="center">
@@ -14,15 +14,15 @@
   <img src="https://img.shields.io/badge/Architecture-MVI--Clean-orange?style=flat-square" alt="MVI Clean Architecture">
 </p>
 
-**Awd TeleDrive Android** is an innovative Android application that transforms your Telegram account into an unlimited, secure personal cloud storage drive. Manage files, automate background backups, and navigate your media directory through a modern Material 3 interface built entirely with Jetpack Compose.
+**TeleNest** is an innovative Android application that transforms your Telegram account into an unlimited, secure personal cloud storage drive. Manage files, automate background backups, and navigate your media directory through a modern Material 3 interface built entirely with Jetpack Compose.
 
 ---
 
 ## 🌐 Teledrive Ecosystem
 This application is part of a cross-platform ecosystem designed to turn Telegram into your personal unlimited cloud storage:
-*   **📱 [Awd TeleDrive Android](https://github.com/putuwahyu29/awd-teledrive-android)**: Secure Android file manager and backup tool.
-*   **💻 [Awd TeleDrive Desktop](https://github.com/putuwahyu29/awd-teledrive-desktop)**: High-performance Wails (Go) + React desktop client with two-way sync, local decryption, and Cloudflare Web Sharing.
-*   **📸 [Awd TelePhoto Android](https://github.com/putuwahyu29/awd-telephoto-android)**: Companion app for client-side encrypted photo/video backup.
+*   **📱 [TeleNest](https://github.com/Hasibulla-Khan/awd-teledrive-android)**: Secure Android file manager and backup tool — an independent fork of the upstream TeleDrive project.
+*   **💻 Desktop companion (upstream)**: High-performance Wails (Go) + React desktop client with two-way sync, local decryption, and Cloudflare Web Sharing.
+*   **📸 Photo companion (upstream)**: Companion app for client-side encrypted photo/video backup.
 
 ---
 
@@ -72,7 +72,7 @@ This application is part of a cross-platform ecosystem designed to turn Telegram
 
 ## 📊 Feature Comparison Matrix
 
-| Feature | 📱 Awd TeleDrive Android | 💻 Awd TeleDrive Desktop | 📸 Awd TelePhoto Android |
+| Feature | 📱 TeleNest | 💻 Desktop companion | 📸 Photo companion |
 | :--- | :---: | :---: | :---: |
 | **Unlimited Cloud Storage** | Yes (Auto-Split for >2GB) | Yes (Any file size) | Yes (Photos & Videos) |
 | **File & Folder Manager** | Yes | Yes | Gallery View only |
@@ -102,12 +102,12 @@ All persistent data, cached sessions, and databases are stored securely in Andro
 *   An Android device running Android 8.0 (API 26) or higher.
 
 ### How to Obtain Telegram API Credentials
-Awd TeleDrive Android requires your own API credentials to connect with Telegram's servers. This is free and takes less than 2 minutes:
+TeleNest requires your own API credentials to connect with Telegram's servers. This is free and takes less than 2 minutes:
 1. Go to [my.telegram.org](https://my.telegram.org/) and log in with your phone number.
 2. Select **API development tools**.
 3. Fill in the form (App title and short name of your choice).
 4. Copy the **App api_id** and **App api_hash**.
-5. Input these values in the configuration screen of the Awd TeleDrive Android app.
+5. Input these values in the configuration screen of the TeleNest app.
 
 > [!NOTE]
 > These credentials remain strictly local. The application communicates directly with Telegram's endpoints and does not send your data to any third-party servers.
@@ -135,7 +135,7 @@ awd-teledrive-android/
 ├── app/                    # Core Android App Module
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/com/awd/teledrive/
+│   │   │   ├── java/live/hasibulla/telenest/
 │   │   │   │   ├── data/        # Room Database, API and TDLib implementation
 │   │   │   │   ├── di/          # Dependency Injection (Hilt modules)
 │   │   │   │   ├── domain/      # Domain business logic & models
@@ -153,7 +153,7 @@ Ensure you have the latest Android Studio installed.
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/putuwahyu29/awd-teledrive-android.git
+   git clone https://github.com/Hasibulla-Khan/awd-teledrive-android.git
    ```
 2. **Build with Gradle Wrapper**:
    Open a terminal in the root directory and run:
@@ -181,13 +181,15 @@ Ensure you have the latest Android Studio installed.
 
 ## ⚙️ Troubleshooting
 
-*   **WorkManager Sync Delays**: Android may postpone background synchronization to conserve battery. You can disable battery optimizations for Awd TeleDrive Android in the Android Settings panel to resolve this.
-*   **TDLib Initialization Errors**: Ensure your device has enough free space. If corruption occurs, clear the application cache from Settings ➡️ Apps ➡️ Awd TeleDrive Android ➡️ Clear Data.
+*   **WorkManager Sync Delays**: Android may postpone background synchronization to conserve battery. You can disable battery optimizations for TeleNest in the Android Settings panel to resolve this.
+*   **TDLib Initialization Errors**: Ensure your device has enough free space. If corruption occurs, clear the application cache from Settings ➡️ Apps ➡️ TeleNest ➡️ Clear Data.
 *   **OTP Verification Fails**: Double-check that your `api_id` and `api_hash` match the credentials generated on `my.telegram.org`.
 
 ---
 
 ## ⚠️ Disclaimer
+
+TeleNest is an independent fork of the upstream TeleDrive project (original MIT license retained — see LICENSE). It is not affiliated with, associated with, authorized by, or endorsed by Telegram Messenger or any other company or party. Each user connects with their own Telegram API credentials (api_id / api_hash from my.telegram.org); credentials and data are not sent to any TeleNest server.
 
 This project is an independent open-source development created solely for educational and learning purposes. It is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Telegram Messenger or any other company or party.
 

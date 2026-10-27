@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Awd TeleDrive Interactive Release Script (Bash)
+# TeleNest Interactive Release Script (Bash)
 
 GRADLE_FILE="app/build.gradle.kts"
 

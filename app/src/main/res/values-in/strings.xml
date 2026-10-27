@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Awd TeleDrive</string>
-    <string name="welcome_title">Selamat Datang di Awd TeleDrive</string>
+    <string name="app_name">TeleNest</string>
+    <string name="welcome_title">Selamat Datang di TeleNest</string>
     <string name="auto_backup">Cadangan Otomatis</string>
     <string name="backup_settings">Pengaturan Cadangan</string>
     <string name="backup_description">Unggah foto dan video baru ke Telegram secara otomatis.</string>
     <string name="last_backup">Cadangan terakhir: %s</string>
     <string name="backup_now">Cadangkan Sekarang</string>
-    <string name="biometric_login_title">Login biometrik untuk Awd TeleDrive</string>
+    <string name="biometric_login_title">Login biometrik untuk TeleNest</string>
     <string name="search_placeholder">Cari di drive...</string>
     <string name="total_used">Total terpakai: %s</string>
     <string name="drive_empty">Drive kosong</string>
@@ -93,7 +93,7 @@
     <string name="no_folders_found">Tidak ada folder lain ditemukan.</string>
     <string name="selected_count">%d dipilih</string>
     <string name="starting_downloads">Memulai %d unduhan</string>
-    <string name="search_teledrive">Cari di TeleDrive</string>
+    <string name="search_teledrive">Cari di TeleNest</string>
     <string name="refreshing">Menyegarkan...</string>
     <string name="sort_name">Nama</string>
     <string name="sort_date">Tanggal</string>

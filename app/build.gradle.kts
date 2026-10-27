@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.awd.teledrive"
+    namespace = "live.hasibulla.telenest"
     compileSdk = 37
 
     signingConfigs {
@@ -24,7 +24,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.awd.teledrive"
+        applicationId = "live.hasibulla.telenest"
         minSdk = 24
         targetSdk = 35
         versionCode = 7

@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Awd TeleDrive</string>
-    <string name="welcome_title">Welcome to Awd TeleDrive</string>
+    <string name="app_name">TeleNest</string>
+    <string name="welcome_title">Welcome to TeleNest</string>
     <string name="auto_backup">Auto Backup</string>
     <string name="backup_settings">Backup Settings</string>
     <string name="backup_description">Automatically upload new photos and videos to Telegram.</string>
     <string name="last_backup">Last backup: %s</string>
     <string name="backup_now">Backup Now</string>
-    <string name="biometric_login_title">Biometric login for Awd TeleDrive</string>
+    <string name="biometric_login_title">Biometric login for TeleNest</string>
     <string name="search_placeholder">Search in drive...</string>
     <string name="total_used">Total used: %s</string>
     <string name="drive_empty">Drive is empty</string>
@@ -93,7 +93,7 @@
     <string name="no_folders_found">No other folders found.</string>
     <string name="selected_count">%d selected</string>
     <string name="starting_downloads">Starting %d downloads</string>
-    <string name="search_teledrive">Search in TeleDrive</string>
+    <string name="search_teledrive">Search in TeleNest</string>
     <string name="refreshing">Refreshing...</string>
     <string name="sort_name">Name</string>
     <string name="sort_date">Date</string>

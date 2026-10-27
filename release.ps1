@@ -1,4 +1,4 @@
-# Awd TeleDrive Interactive Release Script (PowerShell)
+# TeleNest Interactive Release Script (PowerShell)
 
 $gradleFile = "app/build.gradle.kts"
 

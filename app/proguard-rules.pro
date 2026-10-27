@@ -1,4 +1,4 @@
-# Proguard rules for Awd TeleDrive
+# Proguard rules for TeleNest
 
 # TDLib (Telegram Database Library)
 -keep class org.drinkless.tdlib.** { *; }
