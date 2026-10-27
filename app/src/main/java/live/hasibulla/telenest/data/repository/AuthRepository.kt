@@ -77,7 +77,7 @@ class AuthRepository @Inject constructor(
                 }
             }
             is TdApi.AuthorizationStateWaitRegistration -> {
-                telegramClient.send(TdApi.RegisterUser("TeleDrive", "User", false))
+                telegramClient.send(TdApi.RegisterUser("TeleNest", "User", false))
             }
         }
     }

@@ -44,7 +44,7 @@ class UpdateRepository @Inject constructor(
         _updateState.value = UpdateState.Checking
         
         try {
-            val url = URL("https://api.github.com/repos/putuwahyu29/awd-teledrive-android/releases/latest")
+            val url = URL("https://api.github.com/repos/Hasibulla-Khan/awd-teledrive-android/releases/latest")
             val connection = url.openConnection() as HttpURLConnection
             connection.requestMethod = "GET"
             connection.connectTimeout = 10000

@@ -222,7 +222,7 @@ fun SettingsScreen(
         showCacheWarning = showCacheWarning,
         onDismissCacheWarning = viewModel::dismissCacheWarning,
         onExportMetadata = {
-            exportLauncher.launch("teledrive_metadata_${System.currentTimeMillis()}.json")
+            exportLauncher.launch("telenest_metadata_${System.currentTimeMillis()}.json")
         },
         onImportMetadata = {
             importLauncher.launch("application/json")

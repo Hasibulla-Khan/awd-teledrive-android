@@ -8,7 +8,7 @@ GRADLE_FILE="app/build.gradle.kts"
 CURRENT_CODE=$(grep "versionCode =" $GRADLE_FILE | sed 's/[^0-9]*//g')
 CURRENT_NAME=$(grep "versionName =" $GRADLE_FILE | sed 's/.*"\(.*\)".*/\1/')
 
-echo -e "\e[36m--- TeleDrive Release Manager ---\e[0m"
+echo -e "\e[36m--- TeleNest Release Manager ---\e[0m"
 echo "Current Version Name: $CURRENT_NAME"
 echo "Current Version Code: $CURRENT_CODE"
 echo "---------------------------------"

@@ -794,13 +794,13 @@ class DriveRepository @Inject constructor(
     }
 
     fun createFolder(name: String) {
-        telegramClient.send(TdApi.CreateNewSupergroupChat(name, false, true, "TeleDrive Folder", null, 0, false)) { result ->
+        telegramClient.send(TdApi.CreateNewSupergroupChat(name, false, true, "TeleNest Folder", null, 0, false)) { result ->
             if (result is TdApi.Chat) fetchFiles()
         }
     }
 
     fun createSecureFolder(name: String) {
-        telegramClient.send(TdApi.CreateNewSupergroupChat(name, false, false, "TeleDrive Secure Folder", null, 0, false)) { result ->
+        telegramClient.send(TdApi.CreateNewSupergroupChat(name, false, false, "TeleNest Secure Folder", null, 0, false)) { result ->
             if (result is TdApi.Chat) {
                 val updatedSecureIds = currentManifest.secureFolderChatIds.toMutableSet()
                 updatedSecureIds.add(result.id)

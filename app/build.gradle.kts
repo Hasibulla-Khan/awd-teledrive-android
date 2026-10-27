@@ -94,7 +94,7 @@ androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
             val abi = output.filters.find { it.filterType == com.android.build.api.variant.FilterConfiguration.FilterType.ABI }?.identifier ?: "universal"
-            (output as? com.android.build.api.variant.impl.VariantOutputImpl)?.outputFileName?.set("awd-teledrive-v${android.defaultConfig.versionName}-$abi-${variant.name}.apk")
+            (output as? com.android.build.api.variant.impl.VariantOutputImpl)?.outputFileName?.set("telenest-v${android.defaultConfig.versionName}-$abi-${variant.name}.apk")
         }
     }
 }

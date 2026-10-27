@@ -129,7 +129,7 @@ class TransferService : Service() {
 
     private fun createNotification(content: String, progress: Float, ongoing: Boolean, uniqueId: String? = null, isMulti: Boolean = false): android.app.Notification {
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("TeleDrive")
+            .setContentTitle("TeleNest")
             .setContentText(content)
             .setSmallIcon(if (ongoing) android.R.drawable.stat_sys_download else R.mipmap.ic_launcher)
             .setProgress(100, (progress * 100).toInt(), false)

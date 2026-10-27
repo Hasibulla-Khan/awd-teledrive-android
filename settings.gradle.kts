@@ -22,5 +22,5 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "teledrive"
+rootProject.name = "telenest"
 include(":app")

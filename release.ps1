@@ -7,7 +7,7 @@ $content = Get-Content $gradleFile -Raw
 $currentCode = [regex]::Match($content, "versionCode\s*=\s*(\d+)").Groups[1].Value
 $currentName = [regex]::Match($content, 'versionName\s*=\s*"([^"]+)"').Groups[1].Value
 
-Write-Host "--- TeleDrive Release Manager ---" -ForegroundColor Cyan
+Write-Host "--- TeleNest Release Manager ---" -ForegroundColor Cyan
 Write-Host "Current Version Name: $currentName"
 Write-Host "Current Version Code: $currentCode"
 Write-Host "---------------------------------"

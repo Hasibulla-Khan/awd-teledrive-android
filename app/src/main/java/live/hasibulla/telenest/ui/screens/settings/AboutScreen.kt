@@ -142,21 +142,11 @@ fun AboutScreen(
             SettingsCategory(title = stringResource(R.string.links))
             
             SettingsClickableRow(
-                icon = Icons.Default.Public,
-                title = stringResource(R.string.official_website),
-                subtitle = "teledrive.biz.id",
-                onClick = {
-                    val intent = Intent(Intent.ACTION_VIEW, "https://teledrive.biz.id".toUri())
-                    context.startActivity(intent)
-                }
-            )
-
-            SettingsClickableRow(
                 icon = Icons.Default.Code,
                 title = stringResource(R.string.github_and_issues),
-                subtitle = "putuwahyu29/awd-teledrive-android",
+                subtitle = "Hasibulla-Khan/awd-teledrive-android",
                 onClick = {
-                    val intent = Intent(Intent.ACTION_VIEW, "https://github.com/putuwahyu29/awd-teledrive-android".toUri())
+                    val intent = Intent(Intent.ACTION_VIEW, "https://github.com/Hasibulla-Khan/awd-teledrive-android".toUri())
                     context.startActivity(intent)
                 }
             )
